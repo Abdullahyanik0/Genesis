@@ -24,7 +24,9 @@ navMenu();
             if (event.target === arrowLeft) {
                 lastChild = servicesAll.lastElementChild;
                 servicesAll.insertAdjacentElement('afterbegin', lastChild)
-            } else if (event.target === arrowRight) {
+            } 
+            alert
+            else if (event.target === arrowRight) {
                 firstChild = servicesAll.firstElementChild;
                 servicesAll.insertAdjacentElement('beforeend', firstChild)
             }
@@ -44,6 +46,7 @@ ScrollReveal().reveal('.ani-left', {
     distance: '10rem',
     duration: 1000,
     easing: 'ease-in'
+    
 });
 
 ScrollReveal().reveal('.ani-right', {
